@@ -5,7 +5,7 @@
 https://github.com/lydiahallie/javascript-questions
 
 
-## Day 1 (Total Attempted - )
+## Day 1 (Total Attempted - 1-30 )
 
 ### Correct:-
 1,2,4,5,6,7,9,10,15,16,19,21,22,23,24,25,26,27,30
