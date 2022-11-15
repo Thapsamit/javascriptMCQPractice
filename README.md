@@ -91,6 +91,50 @@ getPersonInfo`${person} is ${age} years old`;
 
 
 
+## Day 2 (Total Attempted - 30-50)
+
+# Correct 
+32,35,40,41,47,50
+
+# Incorrect
+31,33,34,36,37,38,39,42,43,44,45,46,49
+
+```
+function sayHi() {
+  return (() => 0)();
+}
+
+console.log(typeof sayHi());
+
+```
+- "number" as it will invoked and return 0 (Immediately Invoked Function).
+
+
+# Doubt
+- The deepest element that caused the event is the target of event.
+- bind returns a function but not executed immediately
+- There are 8 falsy values:
+    - undefined
+    - null
+    - NaN
+    - false
+    - '' (empty string) 
+    - 0
+    - -0
+    - 0n (BigInt(0))
+    
+- typeof typeof 0. it returns string
+- When you set a value to an element in an array that exceeds the length of the array, JavaScript creates something called "empty slots". These actually have the value of undefined, but you will see something like:
+``` [1, 2, 3, empty x 7, 11] ```
+- In catch block we received the argument which is not the same from any outside variable
+- In Js everything is either primitive or object
+- setInterval returns a uniqueId.
+- generator function
+- promise.race method returns the first promise that resolved/reject first
+- 
+``` 
+ const num = parseInt('7*6', 10); returns 7 as it is first argument
+```
 
 
 
