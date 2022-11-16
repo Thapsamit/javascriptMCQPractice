@@ -91,12 +91,12 @@ getPersonInfo`${person} is ${age} years old`;
 
 
 
-## Day 2 (Total Attempted - 30-50)
+## Day 2 (Total Attempted - 31-50)
 
-# Correct 
+### Correct 
 32,35,40,41,47,50
 
-# Incorrect
+### Incorrect
 31,33,34,36,37,38,39,42,43,44,45,46,49
 
 ```
@@ -110,7 +110,7 @@ console.log(typeof sayHi());
 - "number" as it will invoked and return 0 (Immediately Invoked Function).
 
 
-# Doubt
+### Doubt
 - The deepest element that caused the event is the target of event.
 - bind returns a function but not executed immediately
 - There are 8 falsy values:
@@ -136,5 +136,68 @@ console.log(typeof sayHi());
  const num = parseInt('7*6', 10); returns 7 as it is first argument
 ```
 
+## Day 3 (Total Attempted - 51-70 )
+
+### Correct
+51,52,53,54,55,56,59,60,66,67
+
+### Incorrect
+57,58,61,62,63,64,65,68,69,70
+
+```
+const value = { number: 10 };
+
+const multiply = (x = { ...value }) => {
+  console.log((x.number *= 2));
+};
+
+multiply(); #### 20 
+multiply(); #### 20
+multiply(value); #### 20
+multiply(value); #### 40
+```
+
+- First two time default value is used hence new object created each time but in third or fourth time we passed value object to the function 
+
+```
+let num = 10;
+
+const increaseNumber = () => num++;
+const increasePassedNumber = number => number++;
+
+const num1 = increaseNumber();
+const num2 = increasePassedNumber(num1);
+
+console.log(num1);
+console.log(num2);
+```
+- 10 10 as unary operator returned and then increments 
+
+```
+const person = { name: 'Lydia' };
+
+Object.defineProperty(person, 'age', { value: 21 });
+
+console.log(person);
+console.log(Object.keys(person));
+```
+- defineProperty method,we can add new properties or modify existing ones but they are by default not enumerable theresfore when using Object.keys it will only not give "age" key. Properties added using defineProperty method they are immutable by default.
+
+
+### Doubt
+- With throw keyword we can create custom exception and can throw explicit exception.
+- When we try to invoke something that is not a function, a TypeError is thrown. In this case TypeError: pet.bark is not a function, since pet.bark is undefined.
+- An imported module is read-only: you cannot modify the imported module. Only the module that exports them can change its value.
+- variables declared with the var, const or let keyword cannot be deleted using the delete operator.
+- The delete operator returns a boolean value: true on a successful deletion, else it'll return false. 
+- When we add a property to global object then we can delete it.
+- ```
+const data = JSON.stringify(settings, ['level', 'health']);
+```
+  - Second argument is replacer which can be an array or function. If It is array then the property name in the array will be added to JSON.stringify.
+  - If the replacer is a function, this function gets called on every property in the object you're stringifying. The value returned from this function will be the value of the property when it's added to the JSON string. If the value is undefined, this property is excluded from the JSON string.
+- If we do not return a value from reducer then it will give undefined in accumulator. Accumulator is the first parameter and it will take first parameter if not specified.
+- ```console.log(Symbol('foo') === Symbol('foo'));``` Symbol is always unique and it returns false as it gives description which is independent of whether they have same value or not
+- With the padStart method, we can add padding to the beginning of a string.The value passed to this method is the total length of the string together with the padding.If the argument passed to the padStart method is smaller than the length of the array, no padding will be added.
 
 
