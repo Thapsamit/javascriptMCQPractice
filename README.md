@@ -205,4 +205,24 @@ console.log(Symbol('foo') === Symbol('foo'));
 - Symbol is always unique and it returns false as it gives description which is independent of whether they have same value or not
 - With the padStart method, we can add padding to the beginning of a string.The value passed to this method is the total length of the string together with the padding.If the argument passed to the padStart method is smaller than the length of the array, no padding will be added.
 
+## Day 4 (Total Attempted - )
+
+### Correct
+72,73,75,76,77,78,79,80,81,82,83,86,87,90
+
+### Incorrect
+71,74,84,85,89
+
+### Doubt
+- A promise always return a pending state at first.
+- Push function Returns length of the list.
+- Object.freeze(obj) - it restricts the object to add,delete or modify values.
+- for-in we can iterate over enumerable properties that is keys.
+- for-of we can iterate over iterable that is values.
+- By default the arguments are always undefined
+- You can set a default parameter's value equal to another parameter of the function, as long as they've been defined before the default parameter.
+
+
+
+
 
