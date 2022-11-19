@@ -238,8 +238,36 @@ console.log(Symbol('foo') === Symbol('foo'));
 - Regular function have a prototype property, which is an object with constructor property but arrow function do not have prototype property.
 - JS Does automatic semicolon insertion.
 - Symbol not enumerable.
+-
+
+
+## Day 6 (Total attempted - 101-110)
+
+### Correct 
+103,105,106,109
+
+### Incorrect
+101,102,107,108
+
+### Doubt
+
+```
+const one = false || {} || null;
+const two = null || false || '';
+const three = [] || 0 || true;
+
+console.log(one, two, three);
+```
+- When it is truthy value it gives the first truthy value otherwise if all false it gives last value ([] or {} are truthy values)
+- With the await keyword in secondFunction, we literally pause the execution of an async function until the value has been resolved before moving to the next line.
+- We can pass any type of value we want to Promise.resolve, either a promise or a non-promise.
+- Under the hood, emojis are unicodes.These are always the same for the same emojis, so we're comparing two equal strings to each other, which returns true.
+- With splice method, we modify the original array by deleting, replacing or adding elements. 
+- JSON.parse() - Parses JSON to a JavaScript value.
 
 
 
-## Day 6 ()
+
+
+
 
