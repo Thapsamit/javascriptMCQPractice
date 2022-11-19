@@ -205,7 +205,7 @@ console.log(Symbol('foo') === Symbol('foo'));
 - Symbol is always unique and it returns false as it gives description which is independent of whether they have same value or not
 - With the padStart method, we can add padding to the beginning of a string.The value passed to this method is the total length of the string together with the padding.If the argument passed to the padStart method is smaller than the length of the array, no padding will be added.
 
-## Day 4 (Total Attempted - )
+## Day 4 (Total Attempted - 71-90)
 
 ### Correct
 72,73,75,76,77,78,79,80,81,82,83,86,87,90
@@ -224,5 +224,22 @@ console.log(Symbol('foo') === Symbol('foo'));
 
 
 
+## Day 5 (Total Attempted - 91-100)
 
+### Correct
+91,92,93,94,96,99,100
+
+
+### Incorrect
+95,97,98
+
+
+### Doubt
+- Regular function have a prototype property, which is an object with constructor property but arrow function do not have prototype property.
+- JS Does automatic semicolon insertion.
+- Symbol not enumerable.
+
+
+
+## Day 6 ()
 
