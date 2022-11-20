@@ -266,6 +266,27 @@ console.log(one, two, three);
 - JSON.parse() - Parses JSON to a JavaScript value.
 
 
+## Day 7 (Total Attempted - 111-120)
+
+### Correct
+111,114,118,120,121
+
+
+### Incorrect
+112,113,115,116,117,119,122
+
+### Doubt
+- Expressions within template literals are evaluated first. 
+- As long as there is a reference, the object won't get garbage collected.Even if we set to null to start the garbage collector process.
+- when use deafult parameters then if we pass an object explicitly then it refers to the same object but if we don't specify the object then it makes a copy of the object which not effect the original  copy of the object.
+- func(...[1,2,3]) can spread like this
+- With the optional chaining operator ?., we no longer have to explicitly check whether the deeper nested values are valid or not. If we're trying to access a property on an undefined or null value (nullish), the expression short-circuits and returns undefined
+
+
+
+
+
+
 
 
 
