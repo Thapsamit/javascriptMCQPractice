@@ -266,7 +266,7 @@ console.log(one, two, three);
 - JSON.parse() - Parses JSON to a JavaScript value.
 
 
-## Day 7 (Total Attempted - 111-120)
+## Day 7 (Total Attempted - 111-122)
 
 ### Correct
 111,114,118,120,121
@@ -281,6 +281,24 @@ console.log(one, two, three);
 - when use deafult parameters then if we pass an object explicitly then it refers to the same object but if we don't specify the object then it makes a copy of the object which not effect the original  copy of the object.
 - func(...[1,2,3]) can spread like this
 - With the optional chaining operator ?., we no longer have to explicitly check whether the deeper nested values are valid or not. If we're trying to access a property on an undefined or null value (nullish), the expression short-circuits and returns undefined
+
+
+
+## Day 8 - (Total Attempted - 123-130 )
+
+### Correct
+126,130
+
+### Incorrect
+123,124,125,127,128
+
+### Doubt
+- Number.isNaN(x) - check whether passed value is number ?? and check whether it is nan
+- isNan check whether given item is not a number
+
+
+
+
 
 
 
