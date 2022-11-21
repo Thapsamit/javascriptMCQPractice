@@ -296,9 +296,60 @@ console.log(one, two, three);
 - Number.isNaN(x) - check whether passed value is number ?? and check whether it is nan
 - isNan check whether given item is not a number
 
+### Generator function in JS:-
+- It Returns a generator object
+Why Generators?
+Let say storing array of numbers to store elements instead use on the fly to generate value
+```
+    
+function* numberGen(){
+let i = 0;
+yield 1;
+yield 2;
+  
+}
+const gen = numberGen();
+console.log(gen.next()) // gives next value
+console.log(gen.next())// gives next value 
+// It will go till it has values to yield if not then give undefined
+    
+```
 
+```
+function* numGen(){
+let i  = 0;
+while(true){
+  yield i++;
+}
+}
+const gen =  numGen();
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+```
+Important points on Generator:-
+- Generators are functions that can be exited and later re-entered and can use the previous context(variable bindings) will be saved re-entrances.
+- Generator + promises = Tools for asynchronous programming and can reduce callback hell and inversion control.
+- yield* delegates to another generator function
+- the generator function's body is executed until the first yield expression, which specifies the value to be returned from the iterator.
+- A return statement in a generator, when executed, will make the generator finish (i.e. the done property of the object returned by it will be set to true). 
+- 
+```
+function* anotherGenerator(i) {
+  yield i + 1;
+  yield i + 2;
+  yield i + 3;
+}
 
+function* generator(i) {
+  yield i;
+  yield* anotherGenerator(i);
+  yield i + 10;
+}
 
+```
+- generator are not constructable
 
 
 
