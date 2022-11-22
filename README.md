@@ -352,6 +352,39 @@ function* generator(i) {
 - generator are not constructable
 
 
+## Day 9 (Total Attempted - ())
+
+
+### Correct 
+132
+
+### Incorrect
+131,133,134
+
+### Doubt
+
+```
+const emojis = ['🥑', ['✨', '✨', ['🍕', '🍕']]];
+
+console.log(emojis.flat(1));
+```
+Output - ['🥑', '✨', '✨', ['🍕', '🍕']]
+- Here flat will flattened the array whereas the depth of the array depends on the value that we pass.
+
+```
+// sum.js
+export default function sum(x) {
+  return x + x;
+}
+
+// index.js
+import * as sum from './sum';
+```
+answer -  to call sum we use sum.default(x)
+because it is something like similar { default: function sum(x) { return x + x } }, However if there is named export then their would be more key value pairs.
+
+
+
 
 
 
