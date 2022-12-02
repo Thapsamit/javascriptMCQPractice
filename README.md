@@ -352,7 +352,7 @@ function* generator(i) {
 - generator are not constructable
 
 
-## Day 9 (Total Attempted - ())
+## Day 9 (Total Attempted - (131-135))
 
 
 ### Correct 
@@ -385,6 +385,15 @@ because it is something like similar { default: function sum(x) { return x + x }
 
 
 
+## Day 10 Total Attempted (136 - )
+
+### Correct 
+
+
+### Incorrect
+
+
+### Doubt
 
 
 
